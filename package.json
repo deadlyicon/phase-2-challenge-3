@@ -4,7 +4,7 @@
   "description": "phase-2-challenge",
   "main": "index.js",
   "scripts": {
-    "test": "mocha part_1_tests.js"
+    "test": "mocha part-1/Tests"
   },
   "repository": {
     "type": "git",

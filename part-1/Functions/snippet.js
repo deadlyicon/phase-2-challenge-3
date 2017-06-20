@@ -4,7 +4,7 @@ then returns the shortened string.
  If the string is shorter than the maxlength, just return the string unmodified.
 */
 
-let snippet = function(string, maxlength) {
+module.exports = function snippet(string, maxlength) {
   let stringArray = string.split('');
   if (stringArray.length < maxlength) {
     return string

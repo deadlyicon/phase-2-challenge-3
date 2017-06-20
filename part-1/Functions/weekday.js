@@ -3,7 +3,7 @@
 Write a function weekday(date) to find the weekday for a given Date object,
 returing either 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', or 'Sun'. */
 
-let weekday = function(date) {
+module.exports = function weekday(date) {
   if (date.getDay() === 0) {
     return 'Sun';
   }
