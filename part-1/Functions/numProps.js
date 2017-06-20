@@ -2,6 +2,6 @@
 object has. Ignore symbolic properties and count only the "own properties"
 (not inherited) of the object. */
 
-let numProps = function(obj) {
+module.exports = function numProps(obj) {
   return Object.keys(obj).length
 };

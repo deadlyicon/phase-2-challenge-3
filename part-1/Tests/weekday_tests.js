@@ -1,25 +1,19 @@
-let expect = require('chai').expect;
-let weekday = require('./part_1_tests.js').weekday
+const assert = require('chai').assert;
+const weekday = require('../Functions/weekday');
 
   describe('weekday', function() {
+    it('Should return a string', function() {
+      let result = weekday(new Date(2017, 5, 19));
+      assert.typeOf(result, 'string');
+  });
 
-    it('is a function', function(){
-      expect(weekday).to.be.a('function')
-  })
+    it('Should return "Mon" when given new Date(2017, 5, 19)', function() {
+      let result = weekday(new Date(2017, 5, 19));
+      assert.equal(result, 'Mon');
+  });
 
-    it('returns a string', function() {
-      const date = weekday(new Date(2017, 5, 15))
-      expect(date).to.be.a('string')
-  })
-
-  it('returns "Mon" when given new Date(2017, 5, 19)', function() {
-      const date = weekday(new Date(2017, 5, 19))
-      expect(date).to.be.deep.equal('Mon')
-  })
-
-  it('returns "Thu" when given new Date(2017, 5, 15)', function() {
-      const date = weekday(new Date(2017, 5, 15))
-      expect(date).to.be.deep.equal('Thu')
-  })
-
+    it('Should return "Thu" when given new Date(2017, 5, 15)', function () {
+      let result = weekday(new Date(2017, 5, 15));
+      assert.equal(result, 'Thu');
+  });
 })
