@@ -16,4 +16,9 @@ const filterBetween = require('../Functions/filterBetween');
       let result = filterBetween([1, 2, 3, 4, 5, 6, 7], 5, 10);
       assert.deepEqual(result, [5, 6, 7]);
   });
+
+  it('Should return [0, 1, 2] when given([0, 1, 2, 3, 4, 5, 6, 7], 0, 2)', function() {
+    let result = filterBetween([0, 1, 2, 3, 4, 5, 6, 7], 0, 2);
+    assert.deepEqual(result, [0, 1]);
+});
 })
