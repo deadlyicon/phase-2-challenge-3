@@ -1,0 +1,15 @@
+{
+  "name": "part-2",
+  "version": "1.0.0",
+  "description": "Get info from a JSON file",
+  "main": "searchByName.js",
+  "bin": {
+  "searchByName": "./searchByName.js",
+  "searchByState": "./searchByState.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
