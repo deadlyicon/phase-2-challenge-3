@@ -16,4 +16,9 @@ const snippet = require('../Functions/snippet');
       let result = snippet("Hello, world!", 20);
       assert.equal(result, 'Hello, world!');
   });
+
+  it('Should return "H..." when given ("Hi, my name is Patrick!", 1)', function() {
+    let result = snippet("Hi, my name is Patrick!", 1);
+    assert.equal(result, 'H...');
+});
 })

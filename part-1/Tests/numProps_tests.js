@@ -24,4 +24,12 @@ const numProps = require('../Functions/numProps');
       let result = numProps({});
       assert.equal(result, 0);
   });
+
+    it('Should return 2 when given an object with 2 properties', function() {
+      let result = numProps({
+        name: 'Patrick',
+        age: 23
+      });
+      assert.equal(result, 2);
+  });
 })
